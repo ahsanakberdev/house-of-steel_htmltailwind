@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of steel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="font-Helvetica">
+    <!-- TOP AREA -->
+
+    <section class="bg-dark lg:py-2.5 py-1.5 text-center">
+        <div class="container">
+            <div class="text-white font-Open-Sans">
+                <span class="lg:pr-5 pr-2 text-xs">Twentse Ambacht</span>| 
+                <span class="lg:px-5 px-2.5 text-xs">Meubels met karakter</span>| 
+                <span class="lg:pl-5 pl-2 text-xs">Winkel in Ootmarsum</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP AREA -->
+
+    <!-- HEADER -->
+
+    <header class="sticky top-0 bg-white lg:py-0 py-3 z-50 text-blackcolor2 text-6xl">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html">
+                      <img src="../src/img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-trigger lg:hidden block cursor-pointer" onclick="openMenu()">
+                    <img src="../src/img/menu-trigger.svg" width="40px" alt="">
+                </div>
+                <div class="navigations-items lg:static fixed lg:opacity-100 opacity-0 lg:visible invisible text-center lg:h-auto h-screen lg:overflow-visible overflow-hidden lg:bg-transparent bg-white mobile-navigation top-0 lg:z-auto -left-96 lg:w-auto w-full bottom-0 transition-all duration-500 ease-in-out lg:block flex justify-center items-center" id="mobileNav"">
+                    <ul class="flex lg:flex-row flex-col justify-between">
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Meubilair</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Verlichting</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Accessoires</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4 transition-all ease-in duration-150 have-dropdown border-b-4 border-transparent hover:border-secondary"><a href="">Alle Producten</a>
+                            <div class="mega-menu w-full bg-light4 lg:bg-white rounded-xl lg:shadow-xl absolute left-0 right-0 p-4 lg:p-8 z-20">
+                                <div class="container grid lg:gap-8 gap-6 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 grid-cols-1">
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/meubels.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">meubels</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Tafels</li>
+                                                    <li>Stoelen</li>
+                                                    <li>Bijzettafels</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/verlich.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">Verlichting</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Hanglampen</li>
+                                                    <li>Wandlampen</li>
+                                                    <li>Vloerlampen</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/deuren.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase text-myblack">Deuren</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Taatsdeuren</li>
+                                                    <li>Scharnierdeuren</li>
+                                                    <li>Schuifdeuren</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/trappen.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">TRAPPEN</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Lorem ipsum</li>
+                                                    <li>Dolor sit amet</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/accessories.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">TRAPPEN</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Lorem ipsum dolor</li>
+                                                    <li>Ipsum amet</li>
+                                                    <li>Dolor sit amet</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="lg:hidden block cancel absolute right-4 top-4 cursor-pointer" onclick="openMenu()">
+                        <img src="../src/img/cancel.svg" class="w-8" alt="">
+                    </div>
+                </div>
+                <div class="lg:flex hidden">
+                    <div class="flex">
+                        <input class="w-52 border-b border-light text-light2 text-xs" type="text" name="" id="" placeholder="Zoeken">
+                        <img src="../src/img/search.svg" class="w-3 relative -left-3" alt="">
+                    </div>
+                    <div class="flex pl-12">
+                        <img src="../src/img/admin.svg" alt="">
+                        <img src="../src/img/heart.svg" class="px-6" alt="">
+                        <img src="../src/img/basket.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- HOMEPAGE BANNER -->
+
+    <section class="bg-banner bg-cover bg-center bg-no-repeat xl:pt-[408px] lg:pt-60 pt-52 lg:pb-20 pb-14">
+        <div class="container">
+            <div>
+                <h1 class="xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-bold border-l-4 pl-5 text-white border-secondary">Productnaam</h1>
+                <p class="xl:pt-7 lg:pt-6 pt-5 xl:pb-6 pb-4 md:text-lg text-base text-white md:leading-7 leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque mollis bibendum lacus at pellentesque. </p>
+                <div class="actions">
+                    <a href="" class="btn after:content-[''] after:absolute after:right-3 after:top-1/2 after:-translate-y-1/2 after:bg-arrowwhite after:bg-center after:bg-no-repeat">
+                        Shop
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOMEPAGE BANNER -->
+
+    <!-- SLIDE AREA -->
+
+    <section class="lg:pt-20 pt-16">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading border-none text-dark !p-0">
+                    Waarom zou je bij ons bestellen
+                </h2>
+                <p class="lg:py-5 py-3 text-dark">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. 
+                </p>
+                <span class="h-1 w-12 bg-secondary inline-block"></span>
+            </div>
+            <div class="swiper-container relative lg:pt-14 md:pt-10 pt-8">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mySwiper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                    <div class="slider">
+                        <img src="../src/img/DSC00221.png" alt="">
+                        <div class="info">
+                            <h4>Productnaam</h4>
+                            <span>999,-</span>
+                        </div>
+                        <div class="heart">
+                            <img src="../src/img/heart1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                        <a href="" class="btn !text-dark !border-dark">
+                            Bestel
+                        </a>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="slider">
+                                <img src="../src/img/DSC00221.png" alt="">
+                                <div class="info">
+                                    <h4>Productnaam</h4>
+                                    <span>999,-</span>
+                                </div>
+                                <div class="heart">
+                                    <img src="../src/img/heart1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                                <a href="" class="btn !text-dark !border-dark">
+                                    Bestel
+                                </a>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-scrollbar sty js-swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE AREA -->
+
+    <!-- SLIDE AREA 2-->
+
+    <section class="lg:pt-24 pt-14">
+        <div class="container">
+            <div class="flex justify-between items-end">
+                <div>
+                    <h2 class="section-heading text-dark">
+                        Waarom zou je bij ons bestellen
+                    </h2>
+                    <p class="lg:py-5 py-3 text-dark !pb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. 
+                    </p>
+                </div>
+                <p class="!text-dark sm:block hidden">Alles bekijken</p>
+            </div>
+            <div class="swiper-container relative lg:pt-14 md:pt-10 pt-8">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mySwiper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/category.jpg" alt="">
+                        </div>
+                        <div class="lg:mb-10 mb-8">
+                            <a href="" class="category-btn">
+                                Categorie 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar sty js-swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE AREA -->
+
+    <!-- ORDER US -->
+
+    <section class="bg-dark lg:mt-24 md:mt-20 mt-16 xl:py-24 lg:py-20 py-16">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-white border-none !p-0">
+                    Waarom zou je bij ons bestellen
+                </h2>
+                <p class="lg:py-5 py-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. 
+                </p>
+                <span class="h-1 w-12 bg-secondary inline-block"></span>
+            </div>
+            <div class="grid lg:gap-16 gap-8 lg:grid-cols-2 grid-cols-1 lg:pt-16 md:pt-14 pt-12">
+                <div class="flex">
+                    <div class="padding-box">
+                        <img src="../src/img/order1.svg" class="lg:w-auto w-14" alt="">
+                    </div>
+                    <p class="lg:w-3/4 w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+                <div class="flex">
+                    <div class="w-20">
+                        <img src="../src/img/order2.svg" class="mx-auto" alt="">
+                    </div>
+                    <p class="lg:w-[82%] w-full xl:pl-[50px] lg:pl-12 pl-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+                <div class="flex">
+                    <div class="padding-box">
+                        <img src="../src/img/order3.svg" class="lg:w-auto w-14" alt="">
+                    </div>
+                    <p class="lg:w-3/4 w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+                <div class="flex">
+                    <div class="padding-box">
+                        <img src="../src/img/order4.svg" class="lg:w-auto w-14" alt="">
+                    </div>
+                    <p class="lg:w-3/4 w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER US -->
+
+    <!-- CUSTOMERS -->
+
+    <section class="lg:mt-24 md:mt-20 mt-16">
+        <div class="container">
+            <div>
+                <h2 class="section-heading !text-dark">
+                    Waarom zou je bij ons bestellen
+                </h2>
+                <p class="lg:py-5 py-3 !text-dark">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. 
+                </p>
+            </div>
+            <div class="swiper-container2 overflow-x-hidden overflow-y-clip relative lg:pt-14 pt-10">
+                <button class="swiper-button-prev arrows-slider">
+                    
+                </button>
+                <button class="swiper-button-next arrows-slider">
+                    
+                </button>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="flex lg:flex-row flex-col items-center">
+                            <div class="lg:w-[90%] w-full">
+                                <img src="../src/img/customer.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="bg-lightBlue lg:p-16 md:p-10 p-8 lg:w-1/2 w-full lg:absolute static right-0">
+                                <p class="lg:text-2xl lg:leading-10 leading-normal font-Helvetica text-xl text-secondary border-l-4 border-secondary lg:pl-10 pl-5">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque.” </p>
+                                <span class="text-sm text-dark font-Open-Sans inline-block lg:py-6 py-4"><b>- Voor en achternaam,</b> beschrijving</span>
+                                <div>
+                                    <a href="" class="btn !text-dark !border-dark">
+                                        Lees verder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex lg:flex-row flex-col items-center">
+                            <div class="lg:w-[90%] w-full">
+                                <img src="../src/img/customer.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="bg-lightBlue lg:p-16 md:p-10 p-6 lg:w-1/2 w-full lg:absolute static right-0">
+                                <p class="lg:text-2xl lg:leading-10 leading-normal font-Helvetica text-xl text-secondary border-l-4 border-secondary lg:pl-10 pl-5">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque.” </p>
+                                <span class="text-sm text-dark font-Open-Sans inline-block lg:py-6 py-4"><b>- Voor en achternaam,</b> beschrijving</span>
+                                <div>
+                                    <a href="" class="btn !text-dark !border-dark">
+                                        Lees verder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- CUSTOMERS -->
+
+    <!-- CRAFTMAN -->
+
+    <section class="lg:mt-20 md:mt-16 mt-12">
+        <div class="container">
+            <div class="flex lg:flex-nowrap flex-wrap">
+                <div class="lg:w-1/2 lg:p-0 md:p-10 p-6 w-full bg-lightBlue lg:pl-16 md:pl-14 pl-6 flex items-center">
+                    <div>
+                        <h2 class="section-heading">
+                            Craftsmen at work
+                        </h2>
+                        <p class="text-dark lg:w-4/5 w-full lg:py-8 md:py-5 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                        <div class="actions">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Over ons
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="picture">
+                        <img src="../src/img/craftman.jpg" class="w-full" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRAFTMAN -->
+
+    <!-- INSPIRATIE INDOOR -->
+
+    <section class="lg:pt-24 md:pt-16 pt-12">
+        <div class="container">
+            <div>
+                <div class="flex lg:flex-nowrap flex-wrap">  
+                    <div class="lg:w-1/4 w-full lg:pr-6">
+                        <img src="../src/img/indoor1.jpg" class="w-full" alt="">
+                    </div>
+                    <div class="lg:pl-16 lg:pt-0 pt-4">
+                        <h2 class="section-heading !border-l-0 !p-0">Inspiratie indoor</h2>
+                        <p class="!text-dark lg:pt-7 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse <br class="lg:block hidden"> et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. <br class="lg:block hidden"> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex lg:flex-nowrap flex-wrap mt-4">
+                    <div class="lg:w-1/4 w-full lg:pr-6 lg:mb-0 mb-2">
+                        <div class="h-full">
+                            <img src="../src/img/indoowbig.jpg" class="object-cover object-center lg:h-full h-[500px] lg:w-auto w-full" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:w-3/4 w-full">
+                        <div class="flex sm:flex-nowrap flex-wrap w-full">
+                            <div class="sm:w-2/4 w-full mr-2 lg:mb-4 mb-2">
+                                <div class="h-full bg-dark lg:pl-12 pl-6 sm:py-0 py-10 flex items-center">
+                                    <h3 class="lg:text-4xl text-2xl text-white border-l-4 border-secondary pl-4">“Staal dat
+                                        binnenkomt”</h3>
+                                </div>
+                            </div>
+                            <div class="sm:w-2/4 w-full ml-2 lg:mb-4 mb-2">
+                                <img src="../src/img/indoorsm.jpg" class="w-full" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../src/img/indoowl.jpg" class="w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSPIRATIE INDOOR -->
+
+    <!-- INSPIRATIE INDOOR 2 -->
+
+    <section class="pt-4">
+        <div class="container">
+            <div>
+                <div class="flex lg:flex-nowrap flex-wrap">  
+                    <div class="lg:w-[63%] w-full">
+                        <h2 class="section-heading !border-l-0 !p-0">Inspiratie indoor</h2>
+                        <p class="!text-dark lg:pt-7 pt-4 lg:mb-0 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse <br class="lg:block hidden"> et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. <br class="lg:block hidden"> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="lg:w-[37%] w-full">
+                        <img src="../src/img/indoor1.jpg" class="w-full" alt="">
+                    </div>
+                </div>
+                <div class="flex lg:flex-nowrap flex-wrap lg:mt-4 mt-3">
+                    <div class="lg:w-1/4 w-full lg:mb-0 mb-3">
+                        <div class="h-full lg:mr-6">
+                            <img src="../src/img/indoowbig.jpg" class="object-cover object-center lg:h-full h-[500px] lg:w-auto w-full" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:w-3/4 w-full">
+                        <div class="flex sm:flex-nowrap flex-wrap w-full">
+                            <div class="sm:w-2/4 w-full mr-2 lg:mb-4 mb-3">
+                                <div class="h-full bg-dark lg:pl-12 pl-6 sm:py-0 py-10 flex items-center">
+                                    <h3 class="lg:text-4xl md:text-3xl text-2xl text-white border-l-4 border-secondary pl-4">“Staal dat
+                                        binnenkomt”</h3>
+                                </div>
+                            </div>
+                            <div class="sm:w-2/4 w-full ml-2 lg:mb-4 mb-3">
+                                <img src="../src/img/indoorsm.jpg" class="w-full" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../src/img/indoowl.jpg" class="w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSPIRATIE INDOOR -->
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark lg:pt-24 md:pt-20 pt-16 lg:mt-20 md:mt-16 mt-12">
+        <div class="container">
+            <div class="flex lg:flex-nowrap flex-wrap sm:text-left text-center">
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="">Categorie 1</a></li>
+                            <li><a href="">Categorie 2</a></li>
+                            <li><a href="">Categorie 3</a></li>
+                            <li><a href="">Categorie 4</a></li>
+                            <li><a href="">Categorie 5</a></li>
+                            <li><a href="">Categorie 6</a></li>
+                            <li><a href="">Categorie 7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Service</h4>
+                        <ul>
+                            <li><a href="">Over</a></li>
+                            <li><a href="">Betalen</a></li>
+                            <li><a href="">Verzenden</a></li>
+                            <li><a href="">Retourneren</a></li>
+                            <li><a href="">Algemene voorwaarden</a></li>
+                            <li><a href="">Privacybeleid</a></li>
+                            <li><a href="">Veelgestelde vragen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Onze winkel</h4>
+                        <ul>
+                            <li><a href="">Dwarsstraat 1</a></li>
+                            <li><a href="">7631 ES, Ootmarsum</a></li>
+                            <li><a href="" class="underline flex sm:justify-start justify-center"><img src="../src/img/" alt=""><img class="mr-4" src="../src/img/phone.svg" alt="">Telefoonnummer</a></li>
+                            <li><a href="" class="underline flex sm:justify-start justify-center"><img src="../src/img/" alt=""><img class="mr-4" src="../src/img/phone.svg" alt="">info@houseofsteel.nl</a></li>                            <li><a href="">Algemene voorwaarden</a></li>
+                            <li><a href=""><b>KVK:</b>xxx</a></li>
+                            <li><a href=""><b>KVK:</b>xxx</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Volg ons</h4>
+                        <div class="flex sm:justify-start justify-center">
+                            <a href="">
+                                <img src="../src/img/instagram.svg" alt="">
+                            </a>
+                            <a href="" class="px-4">
+                                <img src="../src/img/facebook.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="../src/img/pinterest.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-t border-white lg:py-9 py-7 lg:mt-14 md:mt-12 mt-8">
+                <h4 class="text-center text-white !text-lg">Blijf op de hoogte</h4>
+                <div class="flex justify-center">
+                    <input type="text" name="" id="" class="text-sm w-56 py-2.5 px-3" placeholder="Emailadres">
+                    <a href="" class="text-sm text-white py-2.5 px-6 bg-secondary relative inline-flex after:content-[''] after:absolute after:right-3 after:h-5 after:w-5 pr-11 after:top-1/2 after:-translate-y-1/2 after:bg-arrowwhite after:bg-center after:bg-no-repeat">Inschrijven</a>
+                </div>
+                <div class="flex justify-end pt-4">
+                    <button>
+                        <img src="../src/img/pay.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/paypal.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/moestro.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/deal.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <!-- COPYRIGHT -->
+
+    <div class="bg-secondary text-xs text-white text-center py-2.5">
+        ©2023 House Of Steel
+    </div>
+
+    <!-- COPYRIGHT -->
+
+    <!-- JS -->
+    <script src="../src/js/main.js"></script>
+
+
+  
+
+
+</body>
+</html>

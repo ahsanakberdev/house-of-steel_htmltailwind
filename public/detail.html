@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of steel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="font-Helvetica">
+    <!-- TOP AREA -->
+
+    <section class="bg-dark lg:py-2.5 py-1.5 text-center">
+        <div class="container">
+            <div class="text-white font-Open-Sans">
+                <span class="lg:pr-5 pr-2 text-xs">Twentse Ambacht</span>| 
+                <span class="lg:px-5 px-2.5 text-xs">Meubels met karakter</span>| 
+                <span class="lg:pl-5 pl-2 text-xs">Winkel in Ootmarsum</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP AREA -->
+
+    <!-- HEADER -->
+
+    <header class="sticky top-0 bg-white lg:py-0 py-3 z-50">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html">
+                      <img src="../src/img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-trigger lg:hidden block cursor-pointer" onclick="openMenu()">
+                    <img src="../src/img/menu-trigger.svg" width="40px" alt="">
+                </div>
+                <div class="navigations-items lg:static fixed lg:opacity-100 opacity-0 lg:visible invisible text-center lg:h-auto h-screen lg:overflow-visible overflow-hidden lg:bg-transparent bg-white mobile-navigation top-0 lg:z-auto -left-96 lg:w-auto w-full bottom-0 transition-all duration-500 ease-in-out lg:block flex justify-center items-center" id="mobileNav"">
+                    <ul class="flex lg:flex-row flex-col justify-between">
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Meubilair</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Verlichting</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Accessoires</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4 transition-all ease-in duration-150 have-dropdown border-b-4 border-transparent hover:border-secondary"><a href="">Alle Producten</a>
+                            <div class="mega-menu w-full bg-light4 lg:bg-white rounded-xl lg:shadow-xl absolute left-0 right-0 p-4 lg:p-8 z-20">
+                                <div class="container grid lg:gap-8 gap-6 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 grid-cols-1">
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/meubels.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">meubels</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Tafels</li>
+                                                    <li>Stoelen</li>
+                                                    <li>Bijzettafels</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/verlich.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">Verlichting</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Hanglampen</li>
+                                                    <li>Wandlampen</li>
+                                                    <li>Vloerlampen</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/deuren.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">Deuren</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Taatsdeuren</li>
+                                                    <li>Scharnierdeuren</li>
+                                                    <li>Schuifdeuren</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/trappen.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">TRAPPEN</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Lorem ipsum</li>
+                                                    <li>Dolor sit amet</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/accessories.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">TRAPPEN</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Lorem ipsum dolor</li>
+                                                    <li>Ipsum amet</li>
+                                                    <li>Dolor sit amet</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="lg:hidden block cancel absolute right-4 top-4 cursor-pointer" onclick="openMenu()">
+                        <img src="../src/img/cancel.svg" class="w-8" alt="">
+                    </div>
+                </div>
+                <div class="lg:flex hidden">
+                    <div class="flex">
+                        <input class="w-52 border-b border-light text-light2 text-xs" type="text" name="" id="" placeholder="Zoeken">
+                        <img src="../src/img/search.svg" class="w-3 relative -left-3" alt="">
+                    </div>
+                    <div class="flex pl-12">
+                        <img src="../src/img/admin.svg" alt="">
+                        <img src="../src/img/heart.svg" class="px-6" alt="">
+                        <img src="../src/img/basket.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <div class="bg-secondary font-Open-Sans py-2.5">
+        <div class="container">
+            <a href="listing.html" class="text-xs text-white flex items-center">
+                <img src="../src/img/arrow-back.svg" alt="" class="pr-2.5">Terug naar overzicht
+            </a>
+        </div>
+    </div>
+
+    <!-- GRID DETAIL -->
+
+    <section class="grid-detail lg:pt-24 md:pt-20 pt-10" id="showGallery">
+        <div class="container">
+            <div class="flex lg:flex-nowrap items-center flex-wrap">
+                <div class="lg:w-2/4 w-full lg:mr-14 relative lg:mb-0 mb-12">
+                    <swiper-container scrollbar-hide="false" class="mySwiper swiperSlider"
+                    thumbs-swiper=".mySwiper2" space-between="10">
+                    <swiper-slide>
+                      <img src="../src/img/gallerybig.jpg" class="w-full"/>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="../src/img/gallerybig.jpg" class="w-full"/>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="../src/img/gallerybig.jpg" class="w-full"/>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="../src/img/gallerybig.jpg" class="w-full"/>
+                    </swiper-slide>
+                  </swiper-container>
+                
+                  <swiper-container class="mySwiper2 swiperSlider lg:mt-6 mt-4" space-between="10" slides-per-view="4" free-mode="true"
+                    watch-slides-progress="true">
+                    <swiper-slide>
+                      <img src="../src/img/galleryItemsm.svg" class="w-full" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="../src/img/galleryItemsm.svg" class="w-full" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="../src/img/galleryItemsm.svg" class="w-full" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="../src/img/galleryItemsm.svg" class="w-full" />
+                    </swiper-slide>
+                  </swiper-container>
+                </div>
+                <div class="lg:w-2/4 w-full">
+                    <div>
+                        <h2 class="section-heading !lg:text-3xl !p-0 !border-none pb-2.5">Zwarte taatsdeur</h2>
+                        <span class="block lg:text-lg font-semibold text-dark">999,-</span>
+                        <div class="flex items-center pt-4">
+                            <img src="../src/img/star.svg" alt="">
+                            <img src="../src/img/star.svg" alt="">
+                            <img src="../src/img/star.svg" alt="">
+                            <img src="../src/img/star.svg" alt="">
+                            <img src="../src/img/star-unfill.svg" alt="">
+                            <span class="text-xs text-black pl-2">(98) reviews</span>
+                        </div>
+                        <span class="text-dark font-bold text-sm lg:pt-6 pt-4 inline-block pb-1.5">Korte beschrijving in één zin</span>
+                        <p class="!text-dark">Consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                        <ul class="list-disc lg:pl-8 pl-4 lg:pt-5 pt-4">
+                            <li class="text-dark text-sm font-semibold pb-1.5">Consectetur adipiscing elit. Lorem ipsum dolor sit amet.</li>
+                            <li class="text-dark text-sm font-semibold pb-1.5">consectetur adipiscing elit. Quisque mollis bibendum lacus at.</li>
+                            <li class="text-dark text-sm font-semibold">pellentesque. Lorem ipsum dolor sit amet, consectetur.</li>
+                        </ul>
+                        <div class="flex sm:flex-row flex-col items-center lg:mt-6 mt-5">
+                            <div class="border border-black sm:text-left text-center sm:w-auto w-full py-2.5 px-4">
+                                <button>-</button>
+                                <span class="px-3 text-black">1</span>
+                                <button>+</button>
+                            </div>
+                            <div class="lg:mx-4 sm:mx-3 mx-0 sm:w-auto w-full">
+                                <a href="" class="!bg-black relative after:h-5 after:w-5 pr-10 text-white py-3 px-5 flex after:content-[''] after:absolute after:right-3 after:top-1/2 after:-translate-y-1/2 after:bg-arrowwhite after:bg-center after:bg-no-repeat">
+                                    Toevoegen aan winkelwagen
+                                </a>
+                            </div>
+                            <div class="py-3.5 px-4 sm:w-auto w-full !static border border-black !bg-transparent">
+                                <img src="../src/img/heart1.svg" class="sm:mx-0 mx-auto" alt="">
+                            </div>
+                        </div>
+                        <div class="flex items-center lg:mt-11 mt-8">
+                            <div>
+                                <img src="../src/img/lady.svg" alt="">
+                            </div>
+                            <p class="!text-dark font-bold pl-3">Vragen? Neem direct contact met ons op</p>
+                        </div>
+                        <div class="flex sm:flex-nowrap flex-wrap justify-center md:mt-0 mt-3">
+                            <a href="" class="btn detail-btn !border-dark !text-dark mr-2.5 after:hidden lg:!pr-5 lg-!pr-4 sm:mb-0 mb-2">
+                                Bellen
+                             </a>
+                             <a href="" class="btn detail-btn !border-dark !text-dark mr-2.5 after:hidden lg:!pr-5 lg-!pr-4 sm:mb-0 mb-2">
+                                 Mailen
+                              </a>
+                              <a href="" class="btn detail-btn !border-dark !text-dark after:hidden lg:!pr-5 lg-!pr-4 sm:mb-0 mb-2">
+                                 Chatten
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID DETAIL -->
+
+    <!-- TABS AREA -->
+
+    <section class="xl:pt-28 lg:pt-24 md:pt-20 pt-8 tabs-area">
+        <div class="container">
+            <div>
+                <div class="text-center">
+                    <h2 class="section-heading border-none text-dark !p-0">
+                        Waarom zou je bij ons bestellen
+                    </h2>
+                    <span class="h-1 w-12 bg-secondary inline-block"></span>
+                </div>
+            </div>
+            <div>
+                <ul
+                class="mb-5 flex justify-center tabs list-none flex-col flex-wrap border-b-0 pl-0 md:flex-row lg:mt-8 mt-6"
+                role="tablist"
+                data-te-nav-ref>
+                <li role="presentation">
+                  <a
+                    href="#tabs-home"
+                    class="my-2 block md:mr-4 mr-0 border-x-0 lg:text-lg text-base border-t-0 border-b-2 border-transparent font-bold bg-light4 lg:px-10 lg:py-4 px-7 py-3 leading-tight text-dark hover:isolate focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                    data-te-toggle="pill"
+                    data-te-target="#tabs-home"
+                    data-te-nav-active
+                    role="tab"
+                    aria-controls="tabs-home"
+                    aria-selected="true"
+                    >Specificaties</a
+                  >
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#tabs-profile"
+                    class="focus:border-transparen my-2 block border-x-0 border-t-0 border-b-2 bg-light4 border-transparent lg:px-10 lg:py-4 px-7 py-3 lg:text-lg text-base font-bold leading-tight text-dark hover:isolate focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                    data-te-toggle="pill"
+                    data-te-target="#tabs-profile"
+                    role="tab"
+                    aria-controls="tabs-profile"
+                    aria-selected="false"
+                    >Foto’s van klanten</a
+                  >
+                </li>
+                </ul>
+                <div class="mb-6">
+                    <div
+                    class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                    id="tabs-home"
+                    role="tabpanel"
+                    aria-labelledby="tabs-home-tab"
+                    data-te-tab-active>
+                    <div class="info-1">
+                    <span class="tab-item pb-1">Materiaal en afmetingen</span>
+                        <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap bg-light4">
+                            <div class="sm:w-2/4">
+                                <span class="tab-item">Consectetur adipiscing elit</span>
+                            </div>
+                            <div class="sm:w-2/4">
+                                <span class="tab-item">60kg</span>
+                            </div>
+                        </div>
+                        <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap">
+                            <div class="sm:w-2/4">
+                                <span class="tab-item">Consectetur adipiscing elit</span>
+                            </div>
+                            <div class="sm:w-2/4">
+                                <span class="tab-item">60kg</span>
+                            </div>
+                        </div>
+                        <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap bg-light4">
+                            <div class="sm:w-2/4">
+                                <span class="tab-item">Consectetur adipiscing elit</span>
+                            </div>
+                            <div class="sm:w-2/4">
+                                <span class="tab-item">60kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-1 mt-7">
+                        <span class="tab-item pb-1">Materiaal en afmetingen</span>
+                            <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap bg-light4">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                            <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                            <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap bg-light4">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                            <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                            <div class="flex sm:justify-start justify-between sm:pr-0 pr-2 sm:flex-nowrap flex-wrap bg-light4">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div
+                    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                    id="tabs-profile"
+                    role="tabpanel"
+                    aria-labelledby="tabs-profile-tab">
+                    <div class="info-1">
+                        <span class="tab-item pb-1">Materiaal en afmetingen</span>
+                            <div class="flex sm:flex-nowrap flex-wrap bg-light4">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                            <div class="flex sm:flex-nowrap flex-wrap">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                            <div class="flex sm:flex-nowrap flex-wrap bg-light4">
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">Consectetur adipiscing elit</span>
+                                </div>
+                                <div class="sm:w-2/4">
+                                    <span class="tab-item">60kg</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-1 mt-7">
+                            <span class="tab-item pb-1">Materiaal en afmetingen</span>
+                                <div class="flex sm:flex-nowrap flex-wrap bg-light4">
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">Consectetur adipiscing elit</span>
+                                    </div>
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">60kg</span>
+                                    </div>
+                                </div>
+                                <div class="flex sm:flex-nowrap flex-wrap">
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">Consectetur adipiscing elit</span>
+                                    </div>
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">60kg</span>
+                                    </div>
+                                </div>
+                                <div class="flex sm:flex-nowrap flex-wrap bg-light4">
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">Consectetur adipiscing elit</span>
+                                    </div>
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">60kg</span>
+                                    </div>
+                                </div>
+                                <div class="flex sm:flex-nowrap flex-wrap">
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">Consectetur adipiscing elit</span>
+                                    </div>
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">60kg</span>
+                                    </div>
+                                </div>
+                                <div class="flex sm:flex-nowrap flex-wrap bg-light4">
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">Consectetur adipiscing elit</span>
+                                    </div>
+                                    <div class="sm:w-2/4">
+                                        <span class="tab-item">60kg</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABS AREA -->
+
+    
+    <!-- ORDER US -->
+
+    <section class="bg-dark lg:mt-24 md:mt-20 mt-16 xl:py-24 lg:py-20 py-16">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-white border-none !p-0">
+                    Waarom zou je bij ons bestellen
+                </h2>
+                <p class="lg:py-5 py-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. 
+                </p>
+                <span class="h-1 w-12 bg-secondary inline-block"></span>
+            </div>
+            <div class="grid lg:gap-16 gap-8 lg:grid-cols-2 grid-cols-1 lg:pt-16 md:pt-14 pt-12">
+                <div class="flex">
+                    <div class="padding-box">
+                        <img src="../src/img/order1.svg" class="lg:w-auto w-14" alt="">
+                    </div>
+                    <p class="lg:w-3/4 w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+                <div class="flex">
+                    <div class="w-20">
+                        <img src="../src/img/order2.svg" class="mx-auto" alt="">
+                    </div>
+                    <p class="lg:w-[82%] w-full xl:pl-[50px] lg:pl-12 pl-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+                <div class="flex">
+                    <div class="padding-box">
+                        <img src="../src/img/order3.svg" class="lg:w-auto w-14" alt="">
+                    </div>
+                    <p class="lg:w-3/4 w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+                <div class="flex">
+                    <div class="padding-box">
+                        <img src="../src/img/order4.svg" class="lg:w-auto w-14" alt="">
+                    </div>
+                    <p class="lg:w-3/4 w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER US -->
+
+    <!-- SLIDE AREA -->
+
+    <section class="lg:pt-20 pt-16">
+        <div class="container">
+            <div class="flex justify-between">
+                <h2 class="section-heading">
+                    Waarom zou je bij ons bestellen
+                </h2>
+                <p class="!text-dark sm:block hidden">Alles bekijken</p>
+            </div>
+            <div class="swiper-container relative lg:pt-14 md:pt-10 pt-8">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mySwiper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                    <div class="slider">
+                        <img src="../src/img/DSC00221.png" alt="">
+                        <div class="info">
+                            <h4>Productnaam</h4>
+                            <span>999,-</span>
+                        </div>
+                        <div class="heart">
+                            <img src="../src/img/heart1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                        <a href="" class="btn !text-dark !border-dark">
+                            Bestel
+                        </a>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="slider">
+                                <img src="../src/img/DSC00221.png" alt="">
+                                <div class="info">
+                                    <h4>Productnaam</h4>
+                                    <span>999,-</span>
+                                </div>
+                                <div class="heart">
+                                    <img src="../src/img/heart1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                                <a href="" class="btn !text-dark !border-dark">
+                                    Bestel
+                                </a>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <img src="../src/img/DSC00221.png" alt="">
+                            <div class="info">
+                                <h4>Productnaam</h4>
+                                <span>999,-</span>
+                            </div>
+                            <div class="heart">
+                                <img src="../src/img/heart1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:mt-5 mt-4 lg:mb-10 mb-8">
+                            <a href="" class="btn !text-dark !border-dark">
+                                Bestel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-scrollbar sty js-swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE AREA -->
+
+    <!-- FAQ -->
+
+    <section class="lg:pt-20 md:pt-16 pt-8">
+        <div class="container">
+            <div>
+                <div>
+                    <h2 class="section-heading">Veelgestelde vragen</h2>
+                </div>
+                <div id="accordionExample">
+                    <div
+                      class="bg-white border-y border-light dark:border-neutral-600 dark:bg-neutral-800 lg:mt-12 mt-8">
+                      <h2 class="mb-0" id="headingOne">
+                        <button
+                          class="group accordion-collapsed relative flex justify-between w-full items-start bg-white lg:py-6 py-4 px-5 text-left text-base text-dark transition"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="!visible"
+                        data-te-collapse-item
+                        data-te-collapse-show
+                        aria-labelledby="headingOne"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative accordion-collapsed flex justify-between w-full items-start rounded-none bg-white lg:py-6 py-4 px-5 text-left text-base text-neutral-800 transition"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="accordion-header mb-0" id="headingThree">
+                        <button
+                          class="group relative accordion-collapsed flex justify-between w-full items-start border-0 bg-white lg:py-6 py-4 px-5 text-left text-base"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingThree"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="accordion-header mb-0" id="headingFour">
+                        <button
+                          class="group accordion-collapsed relative justify-between flex w-full items-start border-0 bg-white lg:py-6 py-4 px-5 text-left text-base"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingFour"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="accordion-header mb-0" id="headingFive">
+                        <button
+                          class="group accordion-collapsed relative justify-between flex w-full items-start border-0 bg-white lg:py-6 py-4 px-5 text-left text-base"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingFive"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark lg:pt-24 md:pt-20 pt-16 lg:mt-20 md:mt-16 mt-12">
+        <div class="container">
+            <div class="flex lg:flex-nowrap flex-wrap sm:text-left text-center">
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="">Categorie 1</a></li>
+                            <li><a href="">Categorie 2</a></li>
+                            <li><a href="">Categorie 3</a></li>
+                            <li><a href="">Categorie 4</a></li>
+                            <li><a href="">Categorie 5</a></li>
+                            <li><a href="">Categorie 6</a></li>
+                            <li><a href="">Categorie 7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Service</h4>
+                        <ul>
+                            <li><a href="">Over</a></li>
+                            <li><a href="">Betalen</a></li>
+                            <li><a href="">Verzenden</a></li>
+                            <li><a href="">Retourneren</a></li>
+                            <li><a href="">Algemene voorwaarden</a></li>
+                            <li><a href="">Privacybeleid</a></li>
+                            <li><a href="">Veelgestelde vragen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Onze winkel</h4>
+                        <ul>
+                            <li><a href="">Dwarsstraat 1</a></li>
+                            <li><a href="">7631 ES, Ootmarsum</a></li>
+                            <li><a href="" class="underline flex sm:justify-start justify-center"><img src="../src/img/" alt=""><img class="mr-4" src="../src/img/phone.svg" alt="">Telefoonnummer</a></li>
+                            <li><a href="" class="underline flex sm:justify-start justify-center"><img src="../src/img/" alt=""><img class="mr-4" src="../src/img/phone.svg" alt="">info@houseofsteel.nl</a></li>                            <li><a href="">Algemene voorwaarden</a></li>
+                            <li><a href=""><b>KVK:</b>xxx</a></li>
+                            <li><a href=""><b>KVK:</b>xxx</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Volg ons</h4>
+                        <div class="flex sm:justify-start justify-center">
+                            <a href="">
+                                <img src="../src/img/instagram.svg" alt="">
+                            </a>
+                            <a href="" class="px-4">
+                                <img src="../src/img/facebook.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="../src/img/pinterest.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-t border-white lg:py-9 py-7 lg:mt-14 md:mt-12 mt-8">
+                <h4 class="text-center text-white !text-lg">Blijf op de hoogte</h4>
+                <div class="flex justify-center">
+                    <input type="text" name="" id="" class="text-sm w-56 py-2.5 px-3" placeholder="Emailadres">
+                    <a href="" class="text-sm text-white py-2.5 px-6 bg-secondary relative inline-flex after:content-[''] after:absolute after:right-3 after:h-5 after:w-5 pr-11 after:top-1/2 after:-translate-y-1/2 after:bg-arrowwhite after:bg-center after:bg-no-repeat">Inschrijven</a>
+                </div>
+                <div class="flex justify-end pt-4">
+                    <button>
+                        <img src="../src/img/pay.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/paypal.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/moestro.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/deal.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <!-- COPYRIGHT -->
+
+    <div class="bg-secondary text-xs text-white text-center py-2.5">
+        ©2023 House Of Steel
+    </div>
+
+    <!-- COPYRIGHT -->
+
+
+    <script src="../src/js/main.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg id="truck" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_583" data-name="Rectangle 583" width="48" height="48" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_275" data-name="Group 275">
+    <g id="Group_274" data-name="Group 274" clip-path="url(#clip-path)">
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="5" cy="5" r="5" transform="translate(8 37)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_11" data-name="Ellipse 11" cx="5" cy="5" r="5" transform="translate(31 37)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_894" data-name="Path 894" d="M41,43h3a3,3,0,0,0,3-3V18a5,5,0,0,0-5-5H33" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_47" data-name="Line 47" x2="13" transform="translate(18 43)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_895" data-name="Path 895" d="M1,33v8a2,2,0,0,0,2,2H8" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_896" data-name="Path 896" d="M47,34l-6.625-2.944A4,4,0,0,1,38,27.4V21a2,2,0,0,1,2-2h7Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <rect id="Rectangle_582" data-name="Rectangle 582" width="32" height="32" transform="translate(1 1)" fill="none" stroke="#89734d" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_48" data-name="Line 48" x2="11" transform="translate(5 28)" fill="none" stroke="#89734d" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_49" data-name="Line 49" x2="8" transform="translate(12 23)" fill="none" stroke="#89734d" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_50" data-name="Line 50" x2="5" transform="translate(5 23)" fill="none" stroke="#89734d" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of steel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+</head>
+<body class="font-Helvetica">
+    <!-- TOP AREA -->
+
+    <section class="bg-dark lg:py-2.5 py-1.5 text-center">
+        <div class="container">
+            <div class="text-white font-Open-Sans">
+                <span class="lg:pr-5 pr-2 text-xs">Twentse Ambacht</span>| 
+                <span class="lg:px-5 px-2.5 text-xs">Meubels met karakter</span>| 
+                <span class="lg:pl-5 pl-2 text-xs">Winkel in Ootmarsum</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP AREA -->
+
+    <!-- HEADER -->
+
+    <header class="sticky top-0 bg-white lg:py-0 py-3 z-50">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html">
+                      <img src="../src/img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-trigger lg:hidden block cursor-pointer" onclick="openMenu()">
+                    <img src="../src/img/menu-trigger.svg" width="40px" alt="">
+                </div>
+                <div class="navigations-items lg:static fixed lg:opacity-100 opacity-0 lg:visible invisible text-center lg:h-auto h-screen lg:overflow-visible overflow-hidden lg:bg-transparent bg-white mobile-navigation top-0 lg:z-auto -left-96 lg:w-auto w-full bottom-0 transition-all duration-500 ease-in-out lg:block flex justify-center items-center" id="mobileNav"">
+                    <ul class="flex lg:flex-row flex-col justify-between">
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Meubilair</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Verlichting</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Accessoires</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4 transition-all ease-in duration-150 have-dropdown border-b-4 border-transparent hover:border-secondary"><a href="">Alle Producten</a>
+                            <div class="mega-menu w-full bg-light4 lg:bg-white rounded-xl lg:shadow-xl absolute left-0 right-0 p-4 lg:p-8 z-20">
+                                <div class="container grid lg:gap-8 gap-6 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 grid-cols-1">
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/meubels.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">meubels</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Tafels</li>
+                                                    <li>Stoelen</li>
+                                                    <li>Bijzettafels</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/verlich.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">Verlichting</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Hanglampen</li>
+                                                    <li>Wandlampen</li>
+                                                    <li>Vloerlampen</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/deuren.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">Deuren</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Taatsdeuren</li>
+                                                    <li>Scharnierdeuren</li>
+                                                    <li>Schuifdeuren</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 my-2 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/trappen.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">TRAPPEN</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Lorem ipsum</li>
+                                                    <li>Dolor sit amet</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                    <div class="w-full md:mb-0 hover:pl-1.5 pl-0 transition-all ease-in duration-150">
+                                        <a href="#" class="item hover:pl-1.5 pl-0 py-1 transition-all ease-in duration-150">
+                                            <div>
+                                                <img src="../src/img/accessories.jpg" alt="" class="w-full">
+                                            </div>
+                                            <span class="text-left">
+                                                <h3 class="font-bold text-dark lg:pt-5 pt-3 uppercase">TRAPPEN</h3>
+                                                <ul class="lg:pt-4 pt-3">
+                                                    <li>Lorem ipsum dolor</li>
+                                                    <li>Ipsum amet</li>
+                                                    <li>Dolor sit amet</li>
+                                                </ul>
+                                            </span>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="lg:hidden block cancel absolute right-4 top-4 cursor-pointer" onclick="openMenu()">
+                        <img src="../src/img/cancel.svg" class="w-8" alt="">
+                    </div>
+                </div>
+                <div class="lg:flex hidden">
+                    <div class="flex">
+                        <input class="w-52 border-b border-light text-light2 text-xs" type="text" name="" id="" placeholder="Zoeken">
+                        <img src="../src/img/search.svg" class="w-3 relative -left-3" alt="">
+                    </div>
+                    <div class="flex pl-12">
+                        <img src="../src/img/admin.svg" alt="">
+                        <img src="../src/img/heart.svg" class="px-6" alt="">
+                        <img src="../src/img/basket.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <div class="bg-secondary font-Open-Sans py-2.5">
+        <div class="container">
+            <a href="index.html" class="inline-flex items-center">
+                <img src="../src/img/arrow-back.svg" alt="" class="pr-2.5">
+                <a href="" class="text-xs text-white"> Breadcrumbs / </a>
+                <a href="" class="text-xs text-white"> breadcrumbs /</a>
+                <b class="text-xs text-white">Klantenservice</b>
+            </a>
+        </div>
+    </div>
+
+    <!-- List grid -->
+
+    <section class="lg:pt-20 md:pt-14 sm:pt-12 pt-8">
+        <div class="container">
+            <div class="flex lg:flex-nowrap flex-wrap">
+                <div class="lg:w-1/4 w-full left-grid lg:pr-14">
+                    <div class="bg-light4 lg:p-7 p-5 h-full">
+                        <h4 class="lg:text-lg font-bold font-Open-Sans text-secondary">Snel naar…</h4>
+                        <div>
+                        <span class="!text-dark lg:pt-5 pt-3 inline-block">Bestellen</span>
+                            <ul>
+                                <li><a href="">Bestelling afhalen</a></li>
+                                <li><a href="">Bestelling afhalen</a></li>
+                            </ul>
+                        </div>
+                    <div>
+                        <span>Bestellen</span>
+                            <ul>
+                                <li><a href="">Bestelling afhalen</a></li>
+                                <li><a href="">Bestelling afhalen</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <span class="!text-dark lg:pt-5 pt-3 inline-block">Bestellen</span>
+                            <ul>
+                                <li><a href="">Verzending</a></li>
+                                <li><a href="">Levertijd</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <span class="!text-dark lg:pt-5 pt-3 inline-block">Bestellen</span>
+                            <ul>
+                                <li><a href="">Betaalmethodes</a></li>
+                                <li><a href="">Cadeaubonnen</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <span class="!text-dark lg:pt-5 pt-3 inline-block">Bestellen</span>
+                            <ul>
+                                <li><a href="">Retourbeleid</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <span class="!text-dark lg:pt-5 pt-3 inline-block">Bestellen</span>
+                            <ul>
+                                <li><a href="">Veelgestelde vragen</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Over ons</a></li>
+                                <li><a href="">Algemene voorwaarden</a></li>
+                                <li><a href="">Privacy & cookies</a></li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:border-l border-light3 lg:pl-14 flex-1 lg:mt-0 mt-5">
+                    <h2 class="section-heading">Klantenservice</h2>
+                    <p class="!text-dark">Goedendag, waar kunnen we je mee helpen? </p>
+                    <div class="grid mt-4 lg:gap-7 gap-5 lg:grid-cols-2 grid-cols-1">
+                        <div class="list-box">
+                            <div>
+                                <img src="../src/img/list1.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="info">
+                                <img src="../src/img/caret.svg" alt="">
+                                <span class="inline-block lg:py-3 py-2">Bestellen</span>
+                                <p class="!leading-normal">Alles over bestellen en het <br class="xl:block hidden">
+                                    wijzigen van jouw bestelling</p>
+                            </div>
+                        </div>
+                        <div class="list-box">
+                            <div>
+                                <img src="../src/img/list2.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="info">
+                                <img src="../src/img/truck.svg" alt="">
+                                <span class="inline-block lg:py-3 py-2">Verzenden</span>
+                                <p class="!leading-normal">Alles over bestellen en het <br class="xl:block hidden">
+                                    wijzigen van jouw bestelling</p>
+                            </div>
+                        </div>
+                        <div class="list-box">
+                            <div>
+                                <img src="../src/img/list3.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="info">
+                                <img src="../src/img/betaling.svg" alt="">
+                                <span class="inline-block lg:py-3 py-2">Betaling</span>
+                                <p class="!leading-normal">Alles over bestellen en het <br class="xl:block hidden">
+                                    wijzigen van jouw bestelling</p>
+                            </div>
+                        </div>
+                        <div class="list-box">
+                            <div>
+                                <img src="../src/img/list4.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="info">
+                                <img src="../src/img/retour.svg" alt="">
+                                <span class="inline-block lg:py-3 py-2">Retourneren</span>
+                                <p class="!leading-normal">Alles over bestellen en het <br class="xl:block hidden">
+                                    wijzigen van jouw bestelling</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:mt-11 mt-8">
+                        <div>
+                            <img src="../src/img/lady.svg" alt="">
+                        </div>
+                        <p class="!text-dark font-bold pl-3">Vragen? Neem direct contact met ons op</p>
+                    </div>
+                    <div class="flex sm:flex-nowrap items-center flex-wrap sm:justify-start justify-center mt-3">
+                        <a href="" class="btn detail-btn !border-dark !text-dark mr-2.5 after:hidden lg:!pr-5 lg-!pr-4 sm:mb-0 mb-2">
+                           Bellen
+                        </a>
+                        <a href="" class="btn detail-btn !border-dark !text-dark mr-2.5 after:hidden lg:!pr-5 lg-!pr-4 sm:mb-0 mb-2">
+                            Mailen
+                         </a>
+                         <a href="" class="btn detail-btn !border-dark !text-dark after:hidden lg:!pr-5 lg-!pr-4 sm:mb-0 mb-2">
+                            Chatten
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- List grid -->
+
+    <!-- FAQ -->
+
+    <section class="lg:pt-20 md:pt-16 pt-8">
+        <div class="container">
+            <div>
+                <div>
+                    <h2 class="section-heading">Veelgestelde vragen</h2>
+                </div>
+                <div id="accordionExample">
+                    <div
+                      class="bg-white border-y border-light dark:border-neutral-600 dark:bg-neutral-800 lg:mt-12 mt-8">
+                      <h2 class="mb-0" id="headingOne">
+                        <button
+                          class="group accordion-collapsed relative flex justify-between w-full items-start bg-white lg:py-6 py-4 px-5 text-left text-base text-dark transition"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="!visible"
+                        data-te-collapse-item
+                        data-te-collapse-show
+                        aria-labelledby="headingOne"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative accordion-collapsed flex justify-between w-full items-start rounded-none bg-white lg:py-6 py-4 px-5 text-left text-base text-neutral-800 transition"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="accordion-header mb-0" id="headingThree">
+                        <button
+                          class="group relative accordion-collapsed flex justify-between w-full items-start border-0 bg-white lg:py-6 py-4 px-5 text-left text-base"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingThree"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="accordion-header mb-0" id="headingFour">
+                        <button
+                          class="group accordion-collapsed relative justify-between flex w-full items-start border-0 bg-white lg:py-6 py-4 px-5 text-left text-base"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingFour"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white border-b border-light dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="accordion-header mb-0" id="headingFive">
+                        <button
+                          class="group accordion-collapsed relative justify-between flex w-full items-start border-0 bg-white lg:py-6 py-4 px-5 text-left text-base"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingFive"
+                        data-te-parent="#accordionExample">
+                        <div class="py-4 px-5 text-dark">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae, illum odit dolorum debitis nesciunt dolores exercitationem neque, nisi vel eveniet vero hic quasi consequuntur, distinctio ea corporis doloremque quibusdam?
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark lg:pt-24 md:pt-20 pt-16 lg:mt-20 md:mt-16 mt-12">
+        <div class="container">
+            <div class="flex lg:flex-nowrap flex-wrap sm:text-left text-center">
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="">Categorie 1</a></li>
+                            <li><a href="">Categorie 2</a></li>
+                            <li><a href="">Categorie 3</a></li>
+                            <li><a href="">Categorie 4</a></li>
+                            <li><a href="">Categorie 5</a></li>
+                            <li><a href="">Categorie 6</a></li>
+                            <li><a href="">Categorie 7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Service</h4>
+                        <ul>
+                            <li><a href="">Over</a></li>
+                            <li><a href="">Betalen</a></li>
+                            <li><a href="">Verzenden</a></li>
+                            <li><a href="">Retourneren</a></li>
+                            <li><a href="">Algemene voorwaarden</a></li>
+                            <li><a href="">Privacybeleid</a></li>
+                            <li><a href="">Veelgestelde vragen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Onze winkel</h4>
+                        <ul>
+                            <li><a href="">Dwarsstraat 1</a></li>
+                            <li><a href="">7631 ES, Ootmarsum</a></li>
+                            <li><a href="" class="underline flex sm:justify-start justify-center"><img src="../src/img/" alt=""><img class="mr-4" src="../src/img/phone.svg" alt="">Telefoonnummer</a></li>
+                            <li><a href="" class="underline flex sm:justify-start justify-center"><img src="../src/img/" alt=""><img class="mr-4" src="../src/img/phone.svg" alt="">info@houseofsteel.nl</a></li>                            <li><a href="">Algemene voorwaarden</a></li>
+                            <li><a href=""><b>KVK:</b>xxx</a></li>
+                            <li><a href=""><b>KVK:</b>xxx</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 lg:mb-0 mb-5 md:w-1/3 sm:w-2/4 w-full">
+                    <div>
+                        <h4>Volg ons</h4>
+                        <div class="flex sm:justify-start justify-center">
+                            <a href="">
+                                <img src="../src/img/instagram.svg" alt="">
+                            </a>
+                            <a href="" class="px-4">
+                                <img src="../src/img/facebook.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="../src/img/pinterest.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-t border-white lg:py-9 py-7 lg:mt-14 md:mt-12 mt-8">
+                <h4 class="text-center text-white !text-lg">Blijf op de hoogte</h4>
+                <div class="flex justify-center">
+                    <input type="text" name="" id="" class="text-sm w-56 py-2.5 px-3" placeholder="Emailadres">
+                    <a href="" class="text-sm text-white py-2.5 px-6 bg-secondary relative inline-flex after:content-[''] after:absolute after:right-3 after:h-5 after:w-5 pr-11 after:top-1/2 after:-translate-y-1/2 after:bg-arrowwhite after:bg-center after:bg-no-repeat">Inschrijven</a>
+                </div>
+                <div class="flex justify-end pt-4">
+                    <button>
+                        <img src="../src/img/pay.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/paypal.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/moestro.svg" alt="">
+                    </button>
+                    <button class="ml-3">
+                        <img src="../src/img/deal.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <!-- COPYRIGHT -->
+
+    <div class="bg-secondary text-xs text-white text-center py-2.5">
+        ©2023 House Of Steel
+    </div>
+
+    <!-- COPYRIGHT -->
+
+
+    <!-- JS  -->
+
+    <script src="../src/js/main.js"></script>
+
+
+
+
+</body>
+</html>

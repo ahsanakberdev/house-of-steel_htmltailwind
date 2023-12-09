@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="36.64" viewBox="0 0 40 36.64">
+  <g id="betaling" transform="translate(-7.728 -9.106)">
+    <g id="Group_281" data-name="Group 281" transform="translate(7.728 10.106)">
+      <path id="Path_898" data-name="Path 898" d="M11,41.33V9H41.038V41.33a2.309,2.309,0,0,1-2.311,2.309H13.311A2.31,2.31,0,0,1,11,41.33Z" transform="translate(-6.019 -9)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_899" data-name="Path 899" d="M26,13.621V9h6.932v4.621a2.311,2.311,0,0,1-2.311,2.311H28.311A2.311,2.311,0,0,1,26,13.621Z" transform="translate(-3.689 -8.709)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_51" data-name="Line 51" y2="8" transform="translate(11 10.689)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_52" data-name="Line 52" y2="8" transform="translate(11 -0.311)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_53" data-name="Line 53" y2="3" transform="translate(17 -0.311)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_54" data-name="Line 54" y2="7" transform="translate(17 4.689)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_55" data-name="Line 55" y2="7" transform="translate(17 13.689)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_56" data-name="Line 56" y2="7" transform="translate(17 22.689)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_906" data-name="Path 906" d="M0,0H40" fill="none" stroke="#89734d" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

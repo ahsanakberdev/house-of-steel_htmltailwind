@@ -1,0 +1,430 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+   @apply !overflow-x-hidden;
+}
+
+.container{
+    max-width: 1164px !important;
+}
+
+.sticky{
+    z-index: 9999 !important;
+}
+
+/* FONT FAMILY */
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueMedium.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueBlackCond.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueBlackCond.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueLight.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueBold.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueItalic.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueThin.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueMedium.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueRegular.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueHeavy.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueBold.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeueLight.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+{
+    @apply font-Helvetica;
+}
+
+p,
+input,
+.btn{
+    @apply font-Open-Sans;
+}
+
+/* Repeated Styles */
+
+/* CUSTOM CSS */
+
+.mobile-navigation.active{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    z-index: 99;
+}
+
+header li a{
+    @apply text-sm font-medium text-dark xl:pr-12 pr-5;
+}
+
+.section-heading{
+    @apply font-bold lg:text-4xl md:text-3xl text-2xl border-l-4 border-secondary lg:pl-5 md:pl-3 pl-2;
+}
+
+p,span{
+    @apply text-sm text-white leading-7;
+}
+
+.btn{
+    @apply text-white !pr-11 relative inline-flex lg:py-2 lg:px-5 py-1.5 px-4 border hover:!text-white border-white rounded-full hover:bg-dark hover:border-dark transition-all ease-linear duration-300;
+}
+
+.btn::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../src/img/arrow-dark.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.btn:hover:after{
+    background-image: url(../src/img/arrow-white.svg);
+}
+
+.detail-btn{
+    @apply pl-9 !pr-5;
+}
+
+.detail-btn::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../src/img/call.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.detail-btn:hover::before{
+    background-image: url(../src/img/telephone-white.svg);
+    height: 18px;
+    width: 18px;
+}
+
+.detail-btn:nth-child(2):hover::before{
+    background-image: url(../src/img/mail-whitee.svg);
+    height: 17px;
+    width: 17px;
+}
+
+.detail-btn:nth-child(3):hover::before{
+    background-image: url(../src/img/textt-white.svg);
+    height: 17px;
+    width: 17px;
+}
+
+.detail-btn:nth-child(2)::before{
+    background-image: url(../src/img/message2.svg);
+}
+
+.detail-btn:nth-child(3)::before{
+    background-image: url(../src/img/message3.svg);
+}
+
+footer li a{
+    @apply text-xs text-white pb-2 inline-block;
+}
+
+footer h4{
+    @apply lg:text-xl md:text-lg text-base text-white font-bold mb-4;
+}
+
+.padding-box{
+    @apply xl:pr-12 lg:pr-10 pr-8 ;
+}
+
+.swiper-container img{
+    @apply w-full;
+}
+
+.heart{
+    @apply lg:p-5 p-3 bg-light3 absolute top-0 right-0;
+}
+
+.slider{
+    @apply relative cursor-pointer opacity-30 transition-all duration-300 ease-in;
+}
+
+.slider:hover .info{
+    @apply opacity-100 visible transition-all duration-300 ease-in;
+}
+
+.slider:hover{
+    @apply opacity-100;
+}
+
+.slider .info{
+    @apply absolute bottom-5 left-5 opacity-0 invisible;
+}
+
+.slider h4{
+    @apply text-white lg:text-xl font-bold;
+}
+
+.slide img{
+    @apply w-full;
+}
+
+.swiper-scrollbar{
+    @apply !h-2;
+}
+
+.swiper-scrollbar-drag{
+    @apply !bg-secondary;
+}
+
+.category-btn{
+    @apply  block p-4 bg-lightBlue font-bold text-dark text-base;
+}
+
+.tabs [data-te-nav-active]{
+    @apply bg-secondary text-white;
+}
+
+.tabs-area span{
+    @apply text-dark font-bold lg:pl-14 md:pl-12 pl-4;
+}
+
+.info-1 div{
+    @apply py-2;
+}
+
+.swiperSlider{
+    @apply w-auto !static;
+}
+
+.mySwiper{
+    --swiper-scrollbar-bg-color: #EAEAEA !important;
+    --swiper-scrollbar-size :8px !important;
+    --swiper-scrollbar-drag-bg-color : #8A734D !important; 
+}
+
+.swiperSlider{
+    --swiper-scrollbar-bottom : -30px !important;
+}
+
+.swiper-slide-visible{
+    @apply opacity-30;
+}
+
+.swiper-slide-thumb-active{
+    @apply opacity-100;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    display: none !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: "" !important;
+    height: 10px !important;
+    display: block !important;
+    width: 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.swiper-button-next::after{
+    background-image: url(../src/img/button-next.svg) !important;
+}
+
+.swiper-button-prev::after{
+    background-image: url(../src/img/button-next.svg) !important;
+    transform: rotate(-180deg)
+}
+
+.left-grid li a{
+    @apply text-sm text-dark font-Open-Sans mb-2;
+}
+
+.left-grid ul{
+    @apply lg:pl-3;
+}
+
+.list-box .info{
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center;
+}
+
+.list-box .info img{
+    @apply mx-auto;
+}
+
+.list-box{
+    @apply relative;
+}
+
+
+/* Mega Menu */
+.mega-menu {
+    @apply top-32 pointer-events-none invisible transition-all ease-in duration-150 opacity-0 -mt-px;
+}
+
+.have-dropdown > a, .have-dropdown > span{
+    @apply relative pr-5;
+}
+.have-dropdown > a:after, .have-dropdown > span:after {
+    content:'';
+    @apply block w-2 h-2 absolute right-0 top-1/2 -mt-1.5 border-t-2 border-l-2 border-black transform rotate-[225deg] ;
+}
+
+.inner-page .have-dropdown > a:after, .inner-page .have-dropdown > span:after {
+    @apply border-white;
+}
+
+.have-dropdown > a:hover:after, .have-dropdown > span:hover:after {
+    @apply border-secondary;
+}
+
+.have-dropdown:hover .mega-menu {
+    @apply pointer-events-auto block top-6 lg:h-auto h-[500px] lg:overflow-hidden overflow-scroll lg:top-full mb-4 opacity-100 visible relative lg:absolute;
+}
+
+.mega-menu h3,
+.mega-menu li{
+    @apply text-sm font-bold text-secondary;
+}
+
+.mega-menu li{
+    @apply text-dark pb-2;
+}
+
+.swiper-button-prev{
+    @apply !left-0;
+}
+
+.arrows-slider{
+    @apply lg:!top-[96%] !top-[40%] bg-light4 !w-14 !h-14 flex justify-center items-center transition-all duration-300 ease-linear hover:bg-light3;
+}
+
+.swiper-button-next{
+    @apply lg:!right-[115px] !right-0;
+}
+
+.accordion-collapsed[data-te-collapse-collapsed]::after{
+    content: "" !important;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    background-image: url(../src/img/plus.svg) !important;
+}
+
+.accordion-collapsed::after{
+    content: "" !important;
+    height: 20px !important;
+    width: 20px !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    background-image: url(../src/img/minus.svg) !important;
+}
+
+
+
+/* MEDIA QUERIES FOR ARROWS */
+
+@media(max-width:635px){
+    .accordion-collapsed::after{
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
